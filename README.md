@@ -1,6 +1,13 @@
 # RecipeCleaner
 
+Application that lets you read a recipe website without having to parse through the author's life story. 
+
+TODO: Backend content service coming soon. Will be linked here
+TODO: AllRecipies.com has a different format and will need seperate processing
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+
+
 
 ## Development server
 
