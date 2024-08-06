@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "souce": "./recipe-cleaner",
+    "source": "./",
     "ignore": [
       "firebase.json",
       "**/.*",
