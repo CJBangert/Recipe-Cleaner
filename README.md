@@ -1,6 +1,6 @@
 # RecipeCleaner
 
-Application that lets read a recipe website without having to parse through the author's life story. 
+Application that lets you read a recipe website without having to parse through the author's life story. 
 
 TODO: Backend content service coming soon. Will be linked here
 TODO: AllRecipies.com has a different format and will need seperate processing
