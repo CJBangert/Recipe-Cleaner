@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "source": "./dist/recipe-cleaner",
+    "public": "dist/recipe-cleaner",
     "ignore": [
       "firebase.json",
       "**/.*",
