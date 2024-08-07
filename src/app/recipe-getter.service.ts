@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { Observable, BehaviorSubject, throwError, catchError } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
+import { environment } from '../environments/environment';
 
 
 @Injectable({
@@ -8,7 +9,7 @@ import { Observable, BehaviorSubject, throwError, catchError } from 'rxjs';
 })
 export class RecipeGetterService {
 
-  backendUrl: string = "http://127.0.0.1:5000"
+  backendUrl: string = environment.apiUrl;
   private dataSubject = new BehaviorSubject<any>(null);
   data$ = this.dataSubject.asObservable();
 

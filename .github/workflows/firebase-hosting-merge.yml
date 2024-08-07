@@ -19,4 +19,5 @@ jobs:
           channelId: live
           projectId: recipe-cleaner-75791
         env:
+          API_URL: ${{ secrets.API_URL }}
           FIREBASE_CLI_EXPERIMENTS: webframeworks
