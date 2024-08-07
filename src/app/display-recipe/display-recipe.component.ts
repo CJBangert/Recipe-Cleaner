@@ -9,20 +9,15 @@ import { RecipeGetterService } from '../recipe-getter.service';
   templateUrl: './display-recipe.component.html',
   styleUrl: './display-recipe.component.scss'
 })
-export class DisplayRecipeComponent {
+export class DisplayRecipeComponent implements OnInit{
   data: any
 
   constructor(private recipeService: RecipeGetterService){}
 
   ngOnInit(): void {
-    this.recipeService.data$.subscribe(response => {
-      if (this.data != null){
-        this.data = response.body;
-      }
-      else{
-        this.data = ''
-      }
-    });
+    this.recipeService.data$.subscribe(
+      resp => this.data = resp?.body
+    )
   }
 
 }

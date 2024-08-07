@@ -1,5 +1,11 @@
-<div class="input-bar">
-<input id="framework" type="text" [(ngModel)]="url" />
-<button (click)="getRecipe()" class = "icon">Get Recipe</button>
-</div>
-<br>
+
+<form [formGroup]="urlForm" (ngSubmit)="getRecipe()" class="input-bar">
+    <label for="url">Recipe URL:</label>
+    <input id="website" formControlName="url" type="text">
+    <button type="submit" [disabled]="urlForm.invalid" class="icon">Get Recipe</button>
+    <div *ngIf="urlForm.get('url')?.invalid && urlForm.get('url')?.touched">
+        <small *ngIf="urlForm.get('url')?.hasError('required')" class="error-message">URL is required.</small>
+        <small *ngIf="urlForm.get('url')?.hasError('pattern')" class="error-message">Invalid URL format.</small>
+    </div>
+  </form>
+  
