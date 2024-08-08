@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'placeholder.com'
+    apiUrl: process.env['API_URL']
   };
   
