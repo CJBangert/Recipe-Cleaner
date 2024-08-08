@@ -20,4 +20,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RECIPE_CLEANER_75791 }}
           projectId: recipe-cleaner-75791
         env:
+          API_URL: ${{ secrets.API_URL }}
           FIREBASE_CLI_EXPERIMENTS: webframeworks
